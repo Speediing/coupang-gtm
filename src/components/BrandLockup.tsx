@@ -8,11 +8,10 @@ export function BrandLockup({
     <div className={`brand-lockup brand-lockup-${size}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png"
+        src="/brand/coupang-wordmark.svg"
         alt="Coupang"
-        width="350"
-        height="95"
-        referrerPolicy="no-referrer"
+        width="327"
+        height="74"
         data-brand-source="https://www.coupang.com/"
         className="brand-coupang"
       />

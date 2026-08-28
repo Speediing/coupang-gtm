@@ -22,12 +22,14 @@ The local password in `.env.example` is `land2expand`. Production reads
 
 ## Brand source
 
-The lockup loads the official Coupang wordmark served by the Coupang homepage:
+The lockup vendors the official Coupang wordmark used by the Coupang homepage.
+The canonical raster source is:
 
 `https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png`
 
-The mark is paired with SpaceXAI in a compact lockup. The watercolor is the
-Coupang account-plan asset.
+The local SVG keeps the official wordmark paths so the lockup does not depend
+on the Coupang CDN at runtime. The mark is paired with SpaceXAI in a compact
+lockup. The watercolor is the Coupang account-plan asset.
 
 ## Deploy
 

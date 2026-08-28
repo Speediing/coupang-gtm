@@ -1,4 +1,9 @@
-const TOOLS = ["Grok Bot", "Claude Cowork", "ChatGPT", "Perplexity"] as const;
+const TOOLS = [
+  "SpaceXAI agent fleet",
+  "Claude Cowork",
+  "ChatGPT",
+  "Perplexity",
+] as const;
 
 const ROWS: { label: string; values: string[] }[] = [
   {
@@ -35,8 +40,8 @@ export function CompareTable() {
     <section id="compare" className="compare">
       <h2>Why the computer matters</h2>
       <p className="section-lede">
-        Each Grok Bot agent has a computer, a clear task, and the source tools
-        it needs. Your team stays in control of the final action.
+        Each agent has a computer, a clear task, and the source tools it needs.
+        Your team stays in control of the final action.
       </p>
       <div className="compare-wrap">
         <table className="compare-table">

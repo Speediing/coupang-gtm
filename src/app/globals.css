@@ -5727,10 +5727,6 @@ button:active:not(:focus-visible),
     justify-content: space-between;
   }
 
-  .header-actions .text-button:first-child {
-    display: none;
-  }
-
   .hero h1,
   .hero-line {
     font-size: clamp(44px, 14vw, 62px);
