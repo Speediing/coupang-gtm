@@ -18,13 +18,15 @@ export function JobMore({ job }: { job: CroJob }) {
       {open ? (
         <div className="job-more-body">
           <JobDemo job={job} />
-          <div
-            className={`job-clips${job.clips.length > 1 ? " count-2" : ""}`}
-          >
-            {job.clips.map((id) => (
-              <ClipFigure key={id} clip={CLIPS[id]} />
-            ))}
-          </div>
+          {job.clips.length ? (
+            <div
+              className={`job-clips${job.clips.length > 1 ? " count-2" : ""}`}
+            >
+              {job.clips.map((id) => (
+                <ClipFigure key={id} clip={CLIPS[id]} />
+              ))}
+            </div>
+          ) : null}
         </div>
       ) : null}
     </details>

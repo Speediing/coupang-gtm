@@ -153,7 +153,7 @@ function LiveVisual({ visual }: { visual: StoryVisual }) {
           </header>
           <blockquote>
             <strong>{visual.speaker}</strong>
-            “{visual.quote}”
+            {visual.quote}
           </blockquote>
           <footer>
             {visual.signals.map((signal) => (
@@ -192,8 +192,7 @@ function LiveVisual({ visual }: { visual: StoryVisual }) {
             </p>
           </div>
           <footer>
-            <strong>{visual.questions}</strong>
-            questions need answers
+            {visual.summary}
           </footer>
         </div>
       );

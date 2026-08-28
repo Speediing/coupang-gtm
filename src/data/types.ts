@@ -9,9 +9,9 @@ export type ClipId =
   | "08-chief-groupchat";
 
 export type JobId =
-  | "standardize-room"
-  | "legal-redlines"
-  | "attach-engine";
+  | "launch-brief"
+  | "answer-desk"
+  | "review-packet";
 
 export type ParticipantRole = "you" | "bot";
 
@@ -71,7 +71,7 @@ export type StoryVisual =
       kind: "procurement-email";
       sender: string;
       subject: string;
-      questions: number;
+      summary: string;
     }
   | {
       kind: "answers-found";

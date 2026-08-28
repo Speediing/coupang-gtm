@@ -1,7 +1,7 @@
 import { CompareTable } from "@/components/CompareTable";
 import { HeroTelemetry } from "@/components/HeroTelemetry";
 import { JobSection } from "@/components/JobSection";
-import { QuoteWall } from "@/components/QuoteWall";
+import { RosterChart } from "@/components/RosterChart";
 import { SiteNav } from "@/components/SiteNav";
 import { JOBS } from "@/data/jobs";
 
@@ -12,7 +12,7 @@ export default function HomePage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="hero-watercolor-image"
-          src="/brand/watercolor-pad.png"
+          src="/brand/coupang-watercolor.webp"
           alt=""
         />
         <SiteNav />
@@ -22,25 +22,38 @@ export default function HomePage() {
         <div className="report-hero">
           <HeroTelemetry />
           <section className="hero">
-            <div>
-              <p className="eyebrow">A proactive agent for every Datadog rep</p>
-              <h1>The agents that work while your reps sell.</h1>
+            <div className="hero-copy">
+              <p className="eyebrow">A persistent agent fleet for Coupang</p>
+              <h1>Agents that keep the operating work moving.</h1>
               <p className="hero-intro">
-                Grok Bot listens to calls, watches the inbox, and researches
-                accounts in the background. Work triggers it — not another
-                prompt.
+                Each agent gets its own computer. It can watch for a real work
+                signal, open the tools it needs, and bring back an artifact for
+                the team to review.
               </p>
             </div>
+            <aside className="hero-paper-band" aria-label="How the work moves">
+              <p>One simple loop</p>
+              <ol>
+                <li>A review starts or a question lands.</li>
+                <li>The right agent works across the source tools.</li>
+                <li>Your team reviews the finished brief, answer, or packet.</li>
+              </ol>
+              <span>Nothing sends without approval.</span>
+            </aside>
           </section>
 
+          <RosterChart />
+
           <section className="usecase-framing">
-            <p className="eyebrow">Three sample use cases</p>
+            <p className="eyebrow">Three illustrative workflows</p>
             <h2>
-              Grok Bot gives every seller their own fleet of always-available
-              agent teammates. Anything your sellers do today can be done
-              through Grok Bot.
+              Start with the work between reviews. Let agents gather the
+              sources, draft the artifact, and keep the open items visible.
             </h2>
-            <p>These are three examples from millions — not the boundary.</p>
+            <p>
+              These examples use public account context. They are not a record
+              of Coupang discovery.
+            </p>
           </section>
 
           <div className="metric-grid">
@@ -69,24 +82,23 @@ export default function HomePage() {
 
       <div className="orbit-break" aria-hidden>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/brand/watercolor-orbit.png" alt="" />
+        <img src="/brand/coupang-watercolor.webp" alt="" />
       </div>
 
       <div className="report">
         <CompareTable />
-        <QuoteWall />
       </div>
 
       <footer className="site-footer">
         <div>
-          <p className="footer-title">Cursor for Datadog</p>
-          <p>Grok Bot for Datadog sales</p>
+          <p className="footer-title">Coupang x SpaceXAI</p>
+          <p>Persistent agents for the work between reviews.</p>
         </div>
         <address className="footer-contact">
-          <p>Datadog&apos;s existing Cursor contact</p>
-          <strong>Madeline Ingleby</strong>
-          <a href="mailto:madeline.ingleby@cursor.com">
-            madeline.ingleby@cursor.com
+          <p>Your Cursor contact</p>
+          <strong>Mike Weinert</strong>
+          <a href="mailto:mike.weinert@cursor.com">
+            mike.weinert@cursor.com
           </a>
         </address>
       </footer>

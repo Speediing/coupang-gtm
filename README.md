@@ -1,10 +1,13 @@
-# Grok Bot for Datadog GTM
+# Coupang x SpaceXAI
 
-Passworded site. Grok Bot from SpaceXAI, for Datadog GTM.
+Password-protected customer leave-behind for Coupang.
 
-## What it is
+The site keeps the approved template architecture:
 
-Three GTM jobs on one page. Each job has a short problem statement, an interactive Grok Bot demo, and the matching Krista Letz clips under that demo. Below that: a light index of the clips and the public Grok Bot quote wall.
+- Next.js 15.5
+- `src/` App Router layout
+- Geist Sans and Geist Mono
+- vGPU hero effect with a static watercolor fallback
 
 ## Run locally
 
@@ -14,18 +17,18 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). Default password is `land2expand` (override with `SITE_PASSWORD`).
+The local password in `.env.example` is `land2expand`. Production reads
+`SITE_PASSWORD` at runtime.
 
-## Krista clips
+## Brand source
 
-Download into `private/media/krista-clips/` from the GitHub release (served only through the passworded `/api/media/...` route):
+The lockup loads the official Coupang wordmark served by the Coupang homepage:
 
-```bash
-gh release download krista-gtm-clips-720p-2026-08-26 \
-  --repo Speediing/grok-bot-quotes \
-  --dir private/media/krista-clips
-```
+`https://image7.coupangcdn.com/image/coupang/common/logo_coupang_w350.png`
+
+The mark is paired with SpaceXAI in a compact lockup. The watercolor is the
+Coupang account-plan asset.
 
 ## Deploy
 
-Preview only under the `jasonwiker` Vercel team, project name `datadog-cro`. Set `SITE_PASSWORD=land2expand`. Do not promote to a public production domain until Jason says so.
+The target production domain is `https://coupang-grokbot.vercel.app`.

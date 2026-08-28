@@ -15,6 +15,30 @@ function isLight(hex: string) {
   return (r * 299 + g * 587 + b * 114) / 1000 > 180;
 }
 
+function ComputerIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden>
+      <rect
+        x="3.5"
+        y="4.5"
+        width="17"
+        height="11.5"
+        rx="2"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.7"
+      />
+      <path
+        d="M8.5 20h7M12 16v4"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth="1.7"
+      />
+    </svg>
+  );
+}
+
 function Box({
   bot,
   chief = false,
@@ -33,7 +57,7 @@ function Box({
         }}
         aria-hidden
       >
-        {initials(bot)}
+        {bot.seat ? initials(bot) : <ComputerIcon />}
       </span>
       <span className="org-name">{bot.name}</span>
       <span className="org-blurb">{bot.blurb}</span>
@@ -59,11 +83,11 @@ export function RosterChart() {
 
   return (
     <section id="roster" className="roster">
-      <h2>A background team for every sales rep</h2>
+      <h2>A fleet of agents, each with its own computer.</h2>
       <p className="section-lede">
-        The work itself is the trigger. A call starts, an email lands, or an
-        account enters the list — and the right agent picks it up. They keep
-        working after the laptop closes. Drafts stay drafts until the rep sends.
+        The work is the trigger. A review starts, a question lands, or a
+        program changes. The right agent picks it up and returns with work the
+        team can inspect.
       </p>
 
       <div className="org" role="tree">

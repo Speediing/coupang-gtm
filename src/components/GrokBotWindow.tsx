@@ -382,7 +382,7 @@ export function GrokBotWindow({
           {done ? "Replay" : playing ? "Pause" : "Play"}
         </button>
         <form onSubmit={applyAccount}>
-          <label htmlFor={`acct-${job.id}`}>Account</label>
+          <label htmlFor={`acct-${job.id}`}>Workspace</label>
           <input
             id={`acct-${job.id}`}
             value={draftAccount}
