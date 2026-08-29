@@ -1,6 +1,8 @@
 import { CompareTable } from "@/components/CompareTable";
+import { HeroDemo } from "@/components/HeroDemo";
 import { HeroTelemetry } from "@/components/HeroTelemetry";
 import { JobSection } from "@/components/JobSection";
+import { QuoteWall } from "@/components/QuoteWall";
 import { RosterChart } from "@/components/RosterChart";
 import { SiteNav } from "@/components/SiteNav";
 import { JOBS } from "@/data/jobs";
@@ -22,24 +24,7 @@ export default function HomePage() {
         <div className="report-hero">
           <HeroTelemetry />
           <section className="hero">
-            <div className="hero-copy">
-              <p className="eyebrow">A persistent agent fleet for Coupang</p>
-              <h1>Agents that keep the operating work moving.</h1>
-              <p className="hero-intro">
-                Each agent gets its own computer. It can watch for a real work
-                signal, open the tools it needs, and bring back an artifact for
-                the team to review.
-              </p>
-            </div>
-            <aside className="hero-paper-band" aria-label="How the work moves">
-              <p>One simple loop</p>
-              <ol>
-                <li>A review starts or a question lands.</li>
-                <li>The right agent works across the source tools.</li>
-                <li>Your team reviews the finished brief, answer, or packet.</li>
-              </ol>
-              <span>Nothing sends without approval.</span>
-            </aside>
+            <HeroDemo />
           </section>
 
           <RosterChart />
@@ -87,6 +72,7 @@ export default function HomePage() {
 
       <div className="report">
         <CompareTable />
+        <QuoteWall />
       </div>
 
       <footer className="site-footer">
